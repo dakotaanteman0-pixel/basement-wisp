@@ -2,7 +2,7 @@
 const http = require("node:http");
 const { server: wisp } = require("@mercuryworkshop/wisp-js/server");
 
-const port = Number(process.env.PORT || 3000);
+const port = Number(process.env.PORT || 80);
 
 const server = http.createServer((req, res) => {
   console.log("HTTP request:", req.method, req.url);
